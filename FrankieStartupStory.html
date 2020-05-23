@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/solarized.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<div class="slidecontainer">
+						<object data="slideimages/uxdesign/frankie.svg" width="200" height="220"
+							type="image/svg+xml"></object>
+	
+						<p>
+							Let's Imagine there lived a man named <b>Frankie</b>.
+						</p>
+						<p>
+							Frankie created a startup and assembled a team to build
+							"<b>Post-Future</b>"
+						</p>
+						<p>
+							The Idea behind "Post-Future" was using the app anyone can
+							schedule posting content to social networks
+	
+							<img class="icon" src="slideimages/uxdesign/facebook.png" />
+							<img class="icon" src="slideimages/uxdesign/twitter.png" />
+							<img class="icon" src="slideimages/uxdesign/instagram.png" />
+							<img class="icon" src="slideimages/uxdesign/linkedin.png" />
+						</p>
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+						<img width="180px" height="100px" src="slideimages/uxdesign/dollarchart.jpg" />
+						<p>
+							Frankie spent <b>10,000 $</b> in developing the product and additional
+							<b>2000 $ </b> to market it.
+						</p>
+						<p>
+							Post-Future made a great start with <b>10000 users</b> signing up in first month. Only <b>500
+								users</b>
+							cancelled there subscription in first month.
+						</p>
+	
+						<img width="400px" height="210px" src="slideimages/uxdesign/firstmonth.jpg">
+						<p class="highlighter">User Retention Rate - First Month</p>
+					</div>
+				</section>
+	
+	
+	
+				<section>
+					<div class="slidecontainer">
+						<img width="100px" height="75px" src="slideimages/uxdesign/celebration.png" />
+						<p>
+							Frankie and his team were busy celebrating early success.
+						</p>
+						<p>
+							The success was not long lived as <b>user retention rate</b> fell down after second month.
+							There were bad reviews by users as well.
+						</p>
+	
+						<img width="400px" height="210px" src="slideimages/uxdesign/secondmonth.jpg">
+						<p class="highlighter">User Retention Rate - Second Month</p>
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+						<img width="100px" height="75px" src="slideimages/uxdesign/marketing.png" />
+						<p>
+							Frankie thought to spend more money in Marketing to acquire more users.
+						</p>
+						<p>
+							This helped for few days but after a month lot of
+							users <b>cancelled</b> there subscription.
+						</p>
+	
+						<img width="400px" height="210px" src="slideimages/uxdesign/thirdmonth.jpg">
+						<p class="highlighter">User Retention Rate - Third Month</p>
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+						<img width="100px" height="100px" src="slideimages/uxdesign/questionicon.png" />
+						<p>
+							If you were in Frankie's place what would be your next step?
+						</p>
+						<p>
+							<a href="#/wronganswer-spendmoney"><button><b>Spend more money marketing the
+										product</b></button></a>
+						</p>
+						<p>
+							<a href="#/rightanswer-spendmoney"><button><b>Figure out why users are not liking the
+										product</b></button></a>
+						</p>
+					</div>
+				</section>
+	
+				<section id="wronganswer-spendmoney" data-visibility="uncounted">
+					<div class="slidecontainer">
+						<img width="100px" height="100px" src="slideimages/uxdesign/whoops.png" />
+	
+						<h5>Whoops!</h5>
+	
+						<p style="margin-top: 45px;">
+							Spending more money on Marketing would not be
+							a good choice.
+						</p>
+	
+						<p style="margin-top: 55px;">
+							<a href="#/rightanswer-spendmoney"><button><b>Let's find out why</b></button></a>
+						</p>
+					</div>
+				</section>
+	
+	
+	
+				<section id="rightanswer-spendmoney">
+					<div class="slidecontainer">
+	
+						<img width="100px" height="100px" src="slideimages/uxdesign/correctanswer.png" />
+	
+	
+						<p>Frankie should find <b>where the problem is</b>
+							instead of spending more money on Marketing.
+						</p>
+	
+						<p>
+							If we call a wrong number we will not get the answer
+							we are looking for.
+						</p>
+	
+						<p>
+							Lets keep going.
+						<p>
+					</div>
+	
+				</section>
+	
+	
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<img width="100px" height="100px" src="slideimages/uxdesign/sad.png" />
+	
+	
+						<p>Frankie looked at the reviews posted by users and spoke with users
+							and majority of issues fell into following categories:
+						</p>
+						<p>
+						<ul class="fragment fade-up">
+							<li>Product was <b>difficult to use</b> and understand</li>
+							<li>There were <b>so many steps</b> to accomplish a simple task</li>
+							<li><b>Sign up</b> process was <b>difficult</b> and they gave up</li>
+						</ul>
+						</p>
+					</div>
+	
+				</section>
+	
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<object data="slideimages/uxdesign/frankieangry.svg" width="200" height="220"
+							type="image/svg+xml"></object>
+	
+						<p>
+							Frankie and his team worked hard to make changes
+							in the product.
+						</p>
+	
+						<p>
+							It was <b>hard to fix</b> because some of the developers
+							who worked initially left.
+						</p>
+	
+						<p>
+							It took them <b>3 months</b> to fix lot of issues that customers
+							reported.
+						</p>
+					</div>
+	
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<img width="400px" height="210px" src="slideimages/uxdesign/sixmonths.jpg">
+						<p class="highlighter">User Retention Rate - Sixth Month</p>
+	
+						<p>
+							As users stopped paying for subscription it
+							was difficult to manage costs of server.
+	
+						</p>
+	
+						<p></p>
+						<p>
+							Frankie found it extremely hard to <b>manage cash flow</b>.
+						</p>
+					</div>
+	
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+	
+						<img width="400px" height="210px" src="slideimages/uxdesign/cashburnrate.jpg">
+						<p class="highlighter">Cash Burn Rate</p>
+	
+						<p>
+							Frankie was forced to look into <b>cash burnt</b> from the beginning
+	
+						</p>
+	
+						<p>
+							Despite spending so much money chances of winning were
+							getting weak.
+						</p>
+						<p>
+						</p>
+					</div>
+	
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+	
+						<object data="slideimages/uxdesign/frankieextremeangry.svg" width="200" height="220"
+							type="image/svg+xml"></object>
+						<p>
+							Frankie's frustration was increasing day by day, his dream
+							to build the company was failing in front of his eyes.
+						</p>
+	
+						<p>
+							Unfortunately Frankie was forced to make <b>hard decisions</b>.
+						</p>
+	
+					</div>
+	
+				</section>
+	
+				<section data-transition="zoom">
+					<div class="slidecontainer">
+	
+						<img width="400px" height="210px" src="slideimages/uxdesign/cashburnrate.jpg">
+						<p class="highlighter">Cash Burn Rate</p>
+	
+						<p>
+							Looking at the money Frankie spent, <b>what should Frankie do</b>?
+						</p>
+	
+						<p>
+							<a href="#/wronganswer-cashburn"><button><b>Raise More Money</b></button></a>
+						</p>
+						<p>
+							<a href="#/rightanswer-cashburn"><button><b>Shut down the company</b></button></a>
+	
+						</p>
+	
+					</div>
+	
+				</section>
+	
+				<section data-transition="slide" id="wronganswer-cashburn" data-visibility="uncounted">
+					<div class="slidecontainer">
+						<img width="100px" height="100px" src="slideimages/uxdesign/whoops.png" />
+	
+						<h5>Whoops!</h5>
+	
+						<p style="margin-top: 55px;">
+							Not every founder has pockets loaded with cash. Unfortunately
+							lot of startups die on this stage.
+						</p>
+	
+						<p style="margin-top: 55px;">
+							<a href="#/rightanswer-cashburn"><button>Let's find out why</button></a>
+						</p>
+					</div>
+				</section>
+	
+				<section data-transition="slide" id="rightanswer-cashburn">
+					<div class="slidecontainer">
+	
+						<img width="300px" height="190px" src="slideimages/uxdesign/planecrash.png">
+	
+						<p>
+							Frankie burned so much
+							of cash that it was impossible to recover.
+						</p>
+	
+						<p>
+							Most of the angel investors turned down his request and he didn't
+							get any funding.
+						</p>
+						<p>
+							Frankie was forced to <b>shut down</b> his company.
+						</p>
+						<p>
+						</p>
+					</div>
+				</section>
+	
+	
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<img width="150px" height="150px" src="slideimages/uxdesign/empathy.png">
+	
+						<p>
+							<b>
+								How would you feel if you were Frankie?
+	
+							</b> </p>
+	
+						<p>
+							Don't worry its only the first part of the story,
+							all the hardships we face make us a better person.
+						</p>
+	
+						<p>Ready to help Frankie?</p>
+	
+						<p>
+							<a><button><b>Yes I am ready</b></button></a>
+						</p>
+	
+						<p>
+						</p>
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+						<img src="slideimages/uxdesign/frankieneutral.svg" width="200" height="220" />
+						<p>
+							Frankie was upset by his failure but deep inside
+							he wanted to make a <b>comeback</b>.
+						</p>
+						<p>
+							He decided to share his story with his trusted college
+							friend Keith.
+						</p>
+						<p>
+							Keith recently launched a ecommerce startup Flipmart
+							which recently secured a series C funding.
+						</p>
+	
+					</div>
+				</section>
+	
+	
+				<section>
+					<div class="slidecontainer">
+						<img src="slideimages/uxdesign/frankieandkeith.png" width="300" height="230" />
+						<p>
+							Frankie and Keith sat for a while they reminisced
+							old college days.
+						</p>
+						<p>
+							Afterwards Frankie shared the story with Keith
+							about what wrong with "Post-Future"
+						</p>
+	
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+						<img src="slideimages/uxdesign/cashburnrate.jpg" width="300" height="220" />
+						<img src="slideimages/uxdesign/sixmonths.jpg" width="300" height="220" />
+	
+						<p>
+							Keith spent few minutes pondering what could have went wrong.
+						</p>
+	
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+						<img src="slideimages/uxdesign/cashburnrate.jpg" width="300" height="220" />
+						<img src="slideimages/uxdesign/sixmonths.jpg" width="300" height="220" />
+	
+						<h5>todo</h5>
+						<p>
+							Keith pointed out that problem lies in early stage
+							when you were creating the product.
+						</p>
+	
+					</div>
+				</section>
+	
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							A startup is busy in creating a product
+						</p>
+	
+						<p>
+							If customers dont like the product they will reject it.
+						</p>
+	
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							A startup is busy in creating a product
+						</p>
+	
+						<p>
+							Figuring out what customer wants and creating a product
+							to meet those needs is where the challenge is.
+	
+						</p>
+	
+						<p>
+							Sitting inside the room and thinking about 
+							who are our customers, what do they do doesnt help much.
+						</p>
+	
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							
+							DESIGN > DEVELOP > TEST > RELEASE
+						</p>
+	
+						<p>
+							Most of the startups like Stripe,Airbnb etc have
+							done extremely well in this area i.e. Design.
+	
+						</p>
+	
+						<p>
+							Mostly people think that design is how it looks
+							but its much deeper, its how it works.
+						</p>
+	
+					</div>
+				</section>
+	
+				<section data-auto-animate>
+					<h1 style="margin-top: 100px;">Auto</h1>
+					<h1 style="opacity: 0;">Animate</h1>
+				</section>
+				  <section data-auto-animate>
+					<h1>Auto</h1>
+					<h1>Animate</h1>
+				  </section>
+				
+				  <section data-auto-animate>
+					<div data-id="box" style="height: 50px; background: salmon;"></div>
+				  </section>
+				  <section data-auto-animate>
+					<div data-id="box" style="height: 200px; background: blue;"></div>
+				  </section>
+	
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						
+						  
+						<p>
+							
+						  A design process starts with understanding 
+						  pain points of customer, getting into 
+						  there lives and seeing the problem through there eyes.
+						</p>
+	
+						<p>
+							Afterwards problem is defined 
+	
+							"How might we", "How might we"
+	
+						</p>
+	
+						<p>
+						Team collectively ideates to solve the problem
+						</p>
+	
+						<p>
+							A prototype is created and tested with users
+						</p>
+	
+						TODO : Opportunity for smart animate all the phases come
+						together
+		
+	
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+	
+						<p>
+						 Its good to fail in design phase because 
+						 you havent developed product.  You are investing 
+						 in prototypes which are cheap.
+						</p>
+	
+						<p>
+							The goal of startup is to create experiences 
+							that customers would love.  Remember you 
+							dont buy product you buy an experience.
+						</p>
+	
+						<p>
+							The outcome: You know the product you are creating 
+							is it something that will delight the customer.
+						</p>
+					
+	
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+						<img src="slideimages/uxdesign/frankieandkeith.png" width="300" height="230" />
+	
+						<h5>todo</h5>
+						<p>
+							This brought smile into Frankies phase, he thought
+							that this is something he missed while building
+							
+							"Post-Future".
+						
+						</p>
+	
+						<p>
+							He thanked Keith and moved on to his journey
+						</p>
+					
+	
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							Afterwards Frankie educates himself on 
+							User Experience Design Process
+						
+						</p>
+	
+						<p>
+							He reads case studies of how User Experience design helped in
+							creating engaging prodcuts.
+						</p>
+					
+	
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							Frankie was always annoyed with "Checkout" process in Grocery apps
+						</p>
+	
+						<p>
+							Its a pain just to buy a packs of eggs I need
+							to checkout and pay money.   
+						</p>
+					
+						<p>
+							Our own problems could be the true motivation in 
+							creating a product. 
+						</p>
+	
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+	
+							Determined with the problem statement
+							he thought this is something I can give my life to.
+						</p>
+	
+						<p>
+						  He himself started interviewing people around him. 
+						</p>
+					
+						<p>
+							Although none of the users knew that they were facing a problem
+							but he was able to figure it our by there emotions.  
+						</p>
+	
+						<p>
+							Users were finding it extremely hard to shop groceries through
+							"ZonNow" and "SmallBasket"
+						</p>
+	
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+	
+							Frankied realized that there is a problem.
+						</p>
+	
+						<p>
+						  He hired User Experience designers and they worked 
+						  interviewing more users understanding pain point of 
+						  a grocery app
+						</p>
+					</div>
+				</section>
+	
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							Frankie and his team were able to define the problem 
+							in a human centred way
+						</p>
+	
+						<p>
+							How might we helps a user to quickly checkout grocery
+						</p>
+					
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							They came up with the idea that "Simply adding the item 
+							will place the order"
+					
+						</p>
+	
+						<p>
+							This idea sounded great but 
+							it created the problem of how to charge customers
+						</p>
+					
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							They came up with two ideas :
+							#1. Charge customer at the end of month
+							#2. Integrated wallet once it is topped up, it will deduct money
+							automatically.
+						</p>
+	
+						<p>
+						</p>
+					
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							Both the ideas were prototyped and team started it testing 
+							with users.
+						</p>
+	
+						
+					
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							They create a simple usability report for testing
+						</p>
+						<p>
+							Idea #2 of Integrated wallet is what customers liked
+							the most.
+						</p>
+						
+					
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							Frankie was convinced by looking at usability tests
+							it would work. He named his app as "DailyBasket"
+						</p>
+						<p>
+							Only thing that was worrying him was money, during 
+							"Post-Future" he spent lot of money marketing which
+							didnt yield him result.
+						</p>
+						
+					
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							Back in high motivation, Frankie assembled the devlopment team.
+						</p>
+						<p>
+							He was lucky that some of the developers wanted to work with 
+							him again because of Frankies high spirit.
+						</p>
+						
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							While developers worked hard, Frankie did all 
+							the tie ups for grocery delivery.
+						</p>
+						
+						<p>
+							Since all the designs were in place, it took
+							development team less time to build the app.
+						</p>
+						
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							One of the features of the app was referrals
+							, this was more like customer marketing the product 
+							themselves.
+						</p>
+						
+						<p>
+							Frankie thought instead of spending on marketing
+							if customers refer for a small incentive it will help him 
+							to acquire more users.
+						</p>
+						
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							For the first month they were able to acquire users by
+							marketing in the apartments.
+						</p>
+						
+						<p>
+							They had a descent start.
+						</p>
+						
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+						  Second month is where app started becoming viral.
+						</p>
+						
+						<p>
+							Customers really liked the idea of no checkout process
+							they started becoming addicted to DailyBasket because
+							it made there life easy.
+						</p>
+						
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+						  During third month they added push notifications, using which
+						  users can add item quickly.
+						</p>
+						
+						<p>
+							Competitors of DailyBasket were finding it hard
+							to compete with them.
+						</p>
+						
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							By the end of six month there were so many users that
+							Frankie had to start worrying about having more servers 
+							and scale.
+						</p>
+						
+						<p>
+							When Frankie compared with users acquired and money spent
+							he could not believe that the thinking of creating
+							an engaging product combined with problem solving could
+							be a huge success.
+						</p>
+						
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<h5>todo</h5>
+						<p>
+							This is how Frankie found the sweetspot of success
+						</p>
+						
+						<p>
+							Imagine if you are Frankie what decision would you make
+							to create products that will delight customers?
+						</p>
+						
+					</div>
+				</section>
+	
+				<section>
+					<div class="slidecontainer">
+	
+						<img src="slideimages/uxdesign/win.png" width="300" height="220" />
+	
+						<h5>todo</h5>
+						<p>
+							Stories of Startup failure are very common.
+						</p>
+						
+						<p>
+							Want to know more details about how you can utilize
+							"User Experience Design Process" to win - Click here.
+						</p>
+						
+					</div>
+				</section>
+	
+	
+	
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
