@@ -70,12 +70,12 @@
  
  ::selection {
    color: #fff;
-   background: #d33682;
+   background: #555455;
    text-shadow: none; }
  
  ::-moz-selection {
    color: #fff;
-   background: #d33682;
+   background: #555455;
    text-shadow: none; }
  
  .reveal .slides section,
@@ -149,6 +149,10 @@
    margin-top: 5px;
    color: black;
    margin: 0 0 0 1em; }
+
+   .reveal li{
+     color: black;
+   }
  
  .reveal ol {
    list-style-type: decimal; }
