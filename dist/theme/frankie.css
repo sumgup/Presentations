@@ -151,6 +151,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
   text-align: left;
   margin: 0 0 0 1em; }
 
+  .reveal li {
+    margin-top: 10px;
+  }
+
 .reveal ol {
   list-style-type: decimal; }
 
