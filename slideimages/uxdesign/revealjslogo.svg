@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (6e3e5246a0, 2020-05-07)"
+   sodipodi:docname="revealjslogo.svg"
+   id="svg26"
+   version="1.1"
+   fill="none"
+   viewBox="0 0 190 56"
+   height="56"
+   width="190">
+  <metadata
+     id="metadata32">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs30" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg26"
+     inkscape:window-maximized="1"
+     inkscape:window-y="34"
+     inkscape:window-x="0"
+     inkscape:cy="7.6299484"
+     inkscape:cx="36.715458"
+     inkscape:zoom="5.5117113"
+     showgrid="false"
+     id="namedview28"
+     inkscape:window-height="1009"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     inkscape:export-ydpi="95.5"
+     inkscape:export-xdpi="95.5"
+     style="fill:#000000;fill-opacity:1"
+     id="path2"
+     fill="#D53F8C"
+     d="M59 42.5845L59 14.1384L12 3.73655L12 52.3153L59 42.5845ZM60.4055 45.3572C61.3341 45.1649 62 44.347 62 43.3987L62 13.3355C62 12.3975 61.3481 11.5855 60.4322 11.3828L11.4322 0.538289C10.1836 0.261959 9 1.21225 9 2.49104L8.99999 53.5435C8.99999 54.8111 10.1642 55.759 11.4055 55.502L60.4055 45.3572Z"
+     clip-rule="evenodd"
+     fill-rule="evenodd" />
+  <path
+     inkscape:export-ydpi="95.5"
+     inkscape:export-xdpi="95.5"
+     style="fill:#000000;fill-opacity:1"
+     id="path4"
+     fill="#F2E142"
+     d="M0 12.6013C0 11.653 0.665933 10.8351 1.59452 10.6428L50.5945 0.498019C51.8358 0.241027 53 1.18887 53 2.45649V53.509C53 54.7878 51.8164 55.738 50.5678 55.4617L1.56783 44.6173C0.651943 44.4146 0 43.6025 0 42.6645V12.6013Z" />
+  <path
+     style="fill:#000000;fill-opacity:1"
+     id="path6"
+     fill="#D53F8C"
+     d="M12 3.02932L12 53.0252L9.00001 53.0252L9.00001 3.02932L12 3.02932Z" />
+</svg>
