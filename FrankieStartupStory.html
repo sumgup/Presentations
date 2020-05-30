@@ -17,6 +17,9 @@
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/frankie.css" id="theme">
+	<link rel="stylesheet" href="dist/theme/frankie.css" id="theme">
+	<link rel="stylesheet" href="css/mobile.css">
+
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
@@ -28,6 +31,25 @@
 
 		<!-- Any section element inside of this container is displayed as a slide -->
 		<div class="slides">
+
+			<section>
+				<div class="slidecontainer">
+					<h1>Frankie Story</h1>
+
+
+					<h6>5 minutes</h6>
+
+					<div style=" border: 5px solid black;" class="mobilerotatenotif">
+						<div class="phone">
+						</div>
+						<div class="message">
+							On mobile? Turn to landscape for great experience.
+						</div>
+					</div>
+
+
+				</div>
+			</section>
 
 			<section>
 				<div class="slidecontainer">
@@ -97,6 +119,14 @@
 
 			<section>
 				<div class="slidecontainer">
+					<a style="position: absolute;
+					top: 20px;
+					right: 20px;" href="#/rightanswer-spendmoney">
+						<img width="50" height="50" src="slideimages/uxdesign/close.png" />
+					</a>
+
+
+					</input>
 					<img width="130px" height="130px" src="slideimages/uxdesign/questionicon.png" />
 					<p>
 						If you were in Frankie's place what would be your <b>next step</b>?
@@ -115,7 +145,11 @@
 			<section id="wronganswer-spendmoney" data-visibility="uncounted">
 				<div class="slidecontainer">
 					<img width="100px" height="100px" src="slideimages/uxdesign/whoops.png" />
-
+					<a style="position: absolute;
+					top: 20px;
+					right: 20px;" href="#/rightanswer-spendmoney">
+						<img width="50" height="50" src="slideimages/uxdesign/close.png" />
+					</a>
 					<h5>Whoops!</h5>
 
 					<p style="margin-top: 45px;">
@@ -265,7 +299,11 @@
 
 					<img width="460px" height="290px" src="slideimages/uxdesign/cashburnrate.jpg">
 					<p style="margin-top: 10px;" class="highlighter">Cash Burn Rate</p>
-
+					<a style="position: absolute;
+					top: 20px;
+					right: 20px;" href="#/rightanswer-cashburn">
+						<img width="50" height="50" src="slideimages/uxdesign/close.png" />
+					</a>
 					<p>
 						Looking at the money Frankie spent, <b>what should Frankie do</b>?
 					</p>
@@ -287,7 +325,11 @@
 					<img width="100px" height="100px" src="slideimages/uxdesign/whoops.png" />
 
 					<h5>Whoops!</h5>
-
+					<a style="position: absolute;
+					top: 20px;
+					right: 20px;" href="#/rightanswer-cashburn">
+						<img width="50" height="50" src="slideimages/uxdesign/close.png" />
+					</a>
 					<p style="margin-top: 55px;">
 						Not every startup/founder has the cash to go on.
 						Unfortunately, a lot of startups die on this stage.
@@ -341,7 +383,7 @@
 					<p>Ready to help Frankie?</p>
 
 					<p>
-						<a><button><b>Yes I am ready</b></button></a>
+						<a href="#parttwo"><button><b>Yes I am ready</b></button></a>
 					</p>
 
 					<p>
@@ -349,7 +391,7 @@
 				</div>
 			</section>
 
-			<section>
+			<section id="parttwo">
 				<div class="slidecontainer">
 					<img src="slideimages/uxdesign/frankieneutral.svg" width="200" height="220" />
 					<p>
@@ -542,10 +584,10 @@
 
 					<p>
 						Remember we are sceptical on our own idea.
-						As <b>Richard Feynman</b> said: 
-						
-						<blockquote>"There is no harm in <b>doubt</b> and <b>scepticism</b>,
-						 for it is through these that <b>new discoveries</b> are made."</blockquote> 
+						As <b>Richard Feynman</b> said:
+
+					<blockquote>"There is no harm in <b>doubt</b> and <b>scepticism</b>,
+						for it is through these that <b>new discoveries</b> are made."</blockquote>
 					</p>
 
 				</div>
@@ -1042,6 +1084,24 @@
 
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+		});
+
+		Reveal.on('slidechanged', event => {
+
+			if (event.indexh == 5 || event.indexh == 6
+				|| event.indexh == 13 || event.indexh == 14) {
+				console.log('inslide5')
+				Reveal.configure({ controls: false });
+			}
+			else {
+				Reveal.configure({ controls: true });
+
+			}
+			console.log("slidechanged");
+			console.log(event.indexh);
+
+
+			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
 		});
 
 	</script>
