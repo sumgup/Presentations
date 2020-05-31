@@ -317,15 +317,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
   .backgrounds {
     background-color: #191919; } }
 
-
-    #closebutton {
-      line-height: 12px;
-      width: 18px;
-      font-size: 8pt;
-      font-family: tahoma;
-      margin-top: 25px;
-      margin-right: 20px;
-      position:absolute;
-      top:0;
-      right:0;
-  }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
