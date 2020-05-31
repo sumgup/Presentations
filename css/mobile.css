@@ -6,7 +6,7 @@
   border: 6px solid darkgray;
   border-radius: 10px;
   background-color: grey;
-  animation: rotate 2s ease-in-out 3 alternate;
+  animation: rotate 2s ease-in-out 5s 5 alternate;
   display:none;
 }
 
@@ -30,11 +30,6 @@
 	}
 }
 
-/*@media only screen and (max-device-width: 812px) and (orientation: landscape) {
-  .phone, .message {
-    display: block;
-  }
-}*/
 
 @media screen and (min-width : 0px) and (max-width : 750px){
 
