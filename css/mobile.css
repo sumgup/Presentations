@@ -37,9 +37,7 @@
 }*/
 
 @media screen and (min-width : 0px) and (max-width : 750px){
-  body{
-  background-color: pink;
-  }
+
   .phone, .message {
     display: block;
   }
