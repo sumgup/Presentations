@@ -2,16 +2,19 @@
 
 <head>
     <style>
+        /* The animation shorthand CSS property applies an animation between styles. It is a shorthand for animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state. */
         .direction {
-            stroke-dasharray: 30;
-            stroke-dashoffset: 90;
+            stroke-dasharray:1;
+            animation: draw 10s ease-in 1s infinite normal forwards;
+
         }
 
-        .squiggle {
-  --stroke-dashoffset: 300;
-  stroke-dasharray: 450;
-  stroke-dashoffset: var(--stroke-dashoffset);
-}
+        @keyframes draw {
+            to {
+                stroke-dasharray: 5;
+                stroke-dashoffset: 1;
+            }
+        }
     </style>
 </head>
 
@@ -48,18 +51,9 @@
                     style="fill:#000000;stroke-width:0.0743663" />
             </g>
             <path class="direction" id="direction" d="m 46.887663,86.830604 28.941414,14.150526 31.303323,12.52931 v 0"
-                style="fill:none;stroke:#000000;stroke-width:0.753345;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lend);marker-mid:url(#Arrow1Lend)" />
+                stroke="#000000" stroke-miterlimit="4"
+                style="fill:none;stroke-width:0.753345;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lend);marker-mid:url(#Arrow1Lend)" />
         </svg>
     </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 403.44 74.33">
-            <path class="squiggle" fill="none" stroke="#bc85ff" stroke-miterlimit="10" stroke-width="18"
-                d="M14.2 65.54s36-36.79 56.31-35.66 38.6 27.31 58.13 26.56 26.34-5.91 37.6-13 30.53-19.52 39.48-19.14 19.48 8.23 31.12 19.87 18.91 13.2 25.25 13.16S278.24 58 297 40.76s25.86-17.86 31.49-17.86 48.11 15.42 65 13.27" />
-        </svg>
-        <div class="range-container">
-            <input class="range" type="range" min="0" max="450" value="420">
-            <p>stroke-dasharray: 450</p>
-            <p>stroke-dashoffset: <output name="result" class="result">420</output></p>
-        </div>
-    </div>
+    
 </BODY>

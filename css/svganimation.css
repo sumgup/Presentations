@@ -1,0 +1,13 @@
+ /* The animation shorthand CSS property applies an animation between styles. It is a shorthand for animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state. */
+ .direction {
+    stroke-dasharray:1;
+    animation: draw 10s ease-in 1s infinite normal forwards;
+
+}
+
+@keyframes draw {
+    to {
+        stroke-dasharray: 5;
+        stroke-dashoffset: 1;
+    }
+}
