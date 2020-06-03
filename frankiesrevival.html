@@ -49,7 +49,7 @@
 		<div class="slides">
 
 			<section data-transition-speed="slow">
-				<div  class="slidecontainer">
+				<div class="slidecontainer">
 
 					<img style="margin-bottom: 5px;" width="150px" height="200px"
 						src="slideimages/uxdesign/frankietitle.png" />
@@ -515,7 +515,7 @@
 			<section>
 				<div class="slidecontainer">
 					<img src="slideimages/uxdesign/cashburnratehighlighted.jpg" width="500" height="260" />
-					
+
 
 					<p style="margin-top: 25px;line-height: 1.5em;">
 						Keith pointed out the problem lies in the <b>early</b> stage of the <b>product development</b>.
@@ -1096,7 +1096,8 @@
 					<img src="slideimages/uxdesign/rocket.png" width="175" height="175" />
 
 					<p>
-						When Frankie compared "Post-Future" and "DailyBasket" he could not believe that the thinking of creating
+						When Frankie compared "Post-Future" and "DailyBasket" he could not believe that the thinking of
+						creating
 						an <b>engaging product</b> combined with <b>problem solving</b> could
 						be a huge success.
 					</p>
@@ -1122,13 +1123,43 @@
 
 			<section data-transition-speed="slow" data-transition="zoom">
 				<div class="slidecontainer">
+					<img src="slideimages/uxdesign/share.png" width="100" height="100" />
+					<h3 style="margin-top: 20px;">Friends don't let friends eat bad meals.</h3>
+					<h3>Share the story.</h3>
+					<p>
+						<a class="share-btn"  href="https://twitter.com/share?url=https%3A%2F%2Fsumgup.github.io%2Fstories%2Ffrankiesrevival.html%23%2F&text=A story about reviving a startup&via=sumgupdesign"
+							title="Share on Twitter">
+							<span>Twitter</span>
+						</a>
+
+						<a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsumgup.github.io%2Fstories%2Ffrankiesrevival.html%23%2F"
+							title="Share on Facebook">
+							<span style="margin-left: 5px;" class="share-btn-text">Facebook</span>
+						</a>
+
+						<a class="share-btn" href="mailto:?subject=A story about startup revival&body=https%3A%2F%2Fsumgup.github.io%2Fstories%2Ffrankiesrevival.html%23%2F"
+							title="Share via Email">
+							<span style="margin-left: 5px;"  class="share-btn-text">Email</span>
+						</a>
+
+						<a class="share-btn" href="https://www.addtoany.com/share_save?linkurl=https%3A%2F%2Fsumgup.github.io%2Fstories%2Ffrankiesrevival.html%23%2F"
+							title="More share options">
+							<span style="margin-left: 5px;" class="share-btn-text-sr">More</span>
+						</a>
+
+					</p>
+				</div>
+			</section>
+
+			<section data-transition-speed="slow" data-transition="zoom">
+				<div class="slidecontainer">
 					<img width="150" height="150" src="slideimages/uxdesign/profilepic.png" />
 					<p style="font-size: 22; margin-top: 5px;" class="highlighter">Authored by: Sumit Gupta</p>
 					<p style="font-size: 22; margin-top: 0px;" class="highlighter">User Experience Designer</p>
 
 					<p style="font-size: 26px;">
 						Stories of Startup failure are very common. I feel User Experience Design
-						can contribute to avoid failure. What do you think of the story?
+						can contribute to avoid failure.
 
 					</p>
 					<p style="font-size: 26px;">
@@ -1252,6 +1283,24 @@
 			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
 		});
 
+		(function () {
+
+			var shareButtons = document.querySelectorAll(".share-btn");
+
+			if (shareButtons) {
+				[].forEach.call(shareButtons, function (button) {
+					button.addEventListener("click", function (event) {
+						var width = 650,
+							height = 450;
+
+						event.preventDefault();
+
+						window.open(this.href, 'Share Dialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=' + width + ',height=' + height + ',top=' + (screen.height / 2 - height / 2) + ',left=' + (screen.width / 2 - width / 2));
+					});
+				});
+			}
+
+		})();
 	</script>
 
 </body>
